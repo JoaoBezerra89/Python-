@@ -1,0 +1,39 @@
+import datetime
+print('---------------PROJETO CALCULADORA----------------')
+nome=str(input("Digite o seu nome"))
+empresa=str(input('Digite o nome da sua empresa'))
+cargo=str(input('Digite o seu cargo'))
+salario=float(input('Digite seu salário bruto:'))
+data_atual = datetime.datetime.now()
+date= data_atual.date()
+
+
+if salario<=1903.98:
+    aliquota=0
+    deducao=0
+elif salario<=2826.65:
+    aliquota=7.5
+    deducao=142.80
+elif salario<=3751.05:
+    aliquota=15
+    deducao=354.80
+elif salario<=4664.68:
+    aliquota=22.5
+    deducao=636.13
+else:
+    aliquota=27.5
+    deducao=869.36
+
+ir=(salario * aliquota / 100) - deducao
+salario_liquido = salario - ir
+
+
+print('Cálculo Imposto de Renda')
+print(f'Nome: {nome}\n'
+      f'Empresa: {empresa}\n'
+      f'Cargo: {cargo}\n'
+      f'Salário Bruto: {salario}\n'
+      f'Imposto de renda: {round(ir, 2)}\n'
+      f'Percentual desconto: {aliquota}%\n'
+      f'Salário Liquído: {salario_liquido}\n'
+      f'{date}')

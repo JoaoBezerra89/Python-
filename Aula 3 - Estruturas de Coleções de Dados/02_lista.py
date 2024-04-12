@@ -66,16 +66,21 @@ print(nomes)
 
 nomes.clear()
 print(nomes)
-
+'''
 
 
 
 #SORT >>> Ordena os dados de uma lista.
 
-nomes.sort()
+# nomes.sort()
+# print(nomes)
+
+nomes=['Joana', 'Juliana', 'Pedro', 'Hendrique']
+nomes.sort 
 print(nomes)
 
 
+'''
 #REVERSE >>> Inverte a lista.
 
 nomes.reverse()
@@ -128,9 +133,11 @@ compras2 = produto1+produto2
 print(compras2)
 '''
 
+
 #Lista usando estrutura com IF
-marcas_carro=['Audi','BMW','Mercedes'] #FAZENDO ITERAÇÃO SEMPRE USA FOR
-for item in marcas_carro:
-    print(item)
-    if(item=='BMW'):
-        break
+
+# marcas_carro=['Audi','BMW','Mercedes'] #FAZENDO ITERAÇÃO SEMPRE USA FOR
+# for item in marcas_carro:
+#     print(item)
+#     if(item=='BMW'):
+#         break

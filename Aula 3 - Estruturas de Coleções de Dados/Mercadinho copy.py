@@ -1,5 +1,7 @@
 estoque = []
 
+estoque = []
+
 while True:
     menu = int(input('''
     ---------MENU--------
@@ -73,4 +75,3 @@ while True:
 
     else:
         print('\nOpção inválida!\n')
-
